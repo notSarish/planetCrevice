@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* Fallback color */
+  background-color: #008080; 
+  /* Tiled background image */
+  background-image: url('/images/edgarthebeatmaker.jpg');
+  background-repeat: repeat;
+  background-position: top left;
+  font-family: 'Courier New', monospace;
+  overflow: hidden; /* Prevent scrolling for desktop feel */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
